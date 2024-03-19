@@ -11,6 +11,7 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        try{
             System.out.println("Entre com os dados da conta");
             System.out.print("Numero: ");
             Integer numero = sc.nextInt();
@@ -27,8 +28,6 @@ public class Program {
             System.out.println();
             System.out.print("Entre com o valor para saque: ");
             Double valor = sc.nextDouble();
-
-        try{
             conta.sacar(valor);
             System.out.println(conta);
         }
